@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var repoimpl_1 = require("./Impl/repoimpl");
+var student_1 = require("./model/student");
+var student = new repoimpl_1.RepoImpl();
+var s1 = new student_1.Student();
+s1.setId(1);
+s1.setLastName("Ghimire");
+s1.setFirstName("Arjun");
+student.add(s1);
